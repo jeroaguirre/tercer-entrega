@@ -1,0 +1,164 @@
+h2 {
+    margin: 10px;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+}
+  
+.container-start {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+  
+.container-form {
+    margin: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border: 1px solid black;
+    background-image: url(../images/Logo2.jpeg);
+    background-size: 100%;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    font-weight: bold;
+  
+    input {
+      padding: 8px;
+      margin: 10px 0;
+    }
+}
+  
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+  
+.slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+}
+  
+.logos {
+    width: 100%;
+    display: inline-block;
+  
+    img {
+      width: 50px;
+      margin: 0 15px;
+    }
+}
+  
+.fab {
+    width: calc(1% / 5);
+}
+  
+.container-hero {
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    
+    .img-spec {
+      margin-bottom: 2rem;
+    }
+  
+    .some-text {
+      padding-right: 10rem;
+      display: flex;
+      align-items: center;
+    }
+  
+    .btn-2 {
+      padding: 8px 24px;
+      margin: 2rem;
+      border-radius: 8pc;
+      background-color: white;
+      color: black;
+      font-size: larger;
+      font-weight: bolder;
+    }
+}
+  
+.container-about {
+    margin: 64px 0;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  
+    .us-box {
+      color: black;
+    }
+  
+    .tabla-asic {
+      margin: 2rem;
+      border: 1px solid black;
+      width: 40rem;
+      height: 20rem;
+      padding: 2rem;
+      text-align: center;
+      border-spacing: 20px;
+  
+      th, td {
+        border: 1px solid #ccc;
+      }
+    }
+  
+    .tabla-gpu {
+      margin: 2rem;
+      border: 1px solid black;
+      width: 40rem;
+      height: 20rem;
+      padding: 2rem;
+      text-align: center;
+      border-spacing: 20px;
+  
+      th, td {
+        border: 1px solid #ccc;
+      }
+    }
+  
+    .image-asic {
+      margin: 2rem;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .image-gpu {
+      margin: 2rem;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+}
+  
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
