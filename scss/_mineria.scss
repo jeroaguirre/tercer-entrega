@@ -1,0 +1,79 @@
+
+.container-about {
+    margin: 64px 0;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  
+    .descripcion {
+      margin: 40px auto;
+      max-width: 800px;
+  
+      h2 {
+
+        font-size: 32px;
+        margin-bottom: 40px;
+        margin-left: 40px
+      }
+  
+      h3 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+  
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        margin-left: 40px;
+  
+      }
+  
+      .asic-text, .gpu-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+        margin-top: 40px;
+      }
+    }
+
+    .asic-p .image-asic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gpu-p .image-gpu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .us-row {
+      margin-top: 80px;
+  
+      .row {
+        align-items: center;
+  
+
+  
+          .image-asic, .image-gpu {
+            
+            padding: 20px;
+
+
+  
+            img {
+              max-width: 80%;
+              height: auto;
+            }
+          }
+  
+  
+       
+      }
+    }
+}

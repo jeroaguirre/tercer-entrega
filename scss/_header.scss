@@ -45,8 +45,11 @@
 }
 
 .navbar {
+        
         padding-top: 20px;
         padding-bottom: 20px;
+        background-color: rgba(128, 128, 128, 0.1);  
+
 }
     
 .navbar-brand {
@@ -80,6 +83,7 @@
 .navbar-nav {
         display: flex;
         align-items: center;
+        margin-right: 30px;
 }
 
 .nav-link {
@@ -146,9 +150,10 @@
 .btn-cont button:hover {
     background-color: rgb(93, 9, 93);
     color: white;
-    scale: 1.05;
+    scale: 1.1;
 }
 
-button:active {
-    scale: 0.95;
+.btn-cont button:active {
+        scale: 0.95;
 }
+    

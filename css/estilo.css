@@ -41,7 +41,8 @@
 
 .navbar {
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  background-color: rgba(128, 128, 128, 0.1); }
 
 .navbar-brand {
   display: flex;
@@ -66,7 +67,8 @@
 
 .navbar-nav {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-right: 30px; }
 
 .nav-link {
   margin-left: 30px;
@@ -110,35 +112,93 @@
   background-color: white;
   color: black;
   border-radius: 1pc;
-  margin: 30px 40px 60px; 
-}
+  margin: 30px 40px 60px; }
 
 .btn-cont button:hover {
   background-color: #5d095d;
   color: white;
-  scale: 1.05; 
-}
+  scale: 1.1; }
 
 .btn-cont button:active {
-  scale: 0.95; 
-}
+  scale: 0.95; }
+
+.slider {
+  animation: slidein 30s linear infinite;
+  white-space: nowrap; }
+
+.logos {
+  width: 100%;
+  display: inline-block; }
+  .logos img {
+    width: 50px;
+    margin: 0 15px; }
+
+.fab {
+  width: calc(1% / 5); }
+
+.container-hero {
+  position: relative;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center; }
+  .container-hero h2.text-center {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black; }
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .container-start {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px; }
+  background-image: linear-gradient(lightgrey, lightblue, white); }
+  .container-start .image-mine {
+    width: 30vw;
+    height: 20vw;
+    transition: height 2s; }
+  .container-start .image-mine:hover {
+    height: 200px; }
+  .container-start .image-host {
+    width: 25vw;
+    height: 25vw; }
+  .container-start .image-mine {
+    float: left;
+    margin-left: 100px; }
+  .container-start .mine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .container-start .mine .mineria {
+      overflow: hidden;
+      float: right;
+      margin-right: 200px; }
+  .container-start .host {
+    display: flex;
+    justify-content: space-around; }
+    .container-start .host .hosting {
+      overflow: hidden;
+      float: left;
+      margin-top: 100px;
+      margin-left: 100px; }
 
 .container-form {
-  margin: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
   border: 1px solid black;
   background-image: url(../images/Logo2.jpeg);
-  background-size: 100%; }
+  background-position: center; }
 
 form {
   display: flex;
@@ -156,103 +216,83 @@ label {
   padding: 5px;
   color: white; }
 
-.slider {
-  animation: slidein 30s linear infinite;
-  white-space: nowrap; }
-
-.logos {
-  width: 100%;
-  display: inline-block; }
-  .logos img {
-    width: 50px;
-    margin: 0 15px; }
-
-.fab {
-  width: calc(1% / 5); }
-
-.container-hero {
-  margin: 4rem auto;
-  display: flex;
-  align-items: center;
-  padding: 32px; }
-
-.img-spec {
-  margin-bottom: 2rem; }
-
-.some-text {
-  padding-right: 10rem;
-  display: flex;
-  align-items: center; }
-
 .btn-2 {
   padding: 8px 24px;
   margin: 2rem;
   border-radius: 8pc;
-  background-color: white;
-  color: black;
+  background-color: transparent;
+  color: white;
   font-size: larger;
   font-weight: bolder; }
+
+.container-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(128, 128, 128, 0.1); }
 
 .container-about {
   margin: 64px 0;
   padding: 32px;
   display: flex;
   align-items: center;
+  gap: 50px; }
+  .container-about .descripcion {
+    margin: 40px auto;
+    max-width: 800px; }
+    .container-about .descripcion h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      margin-left: 40px; }
+    .container-about .descripcion h3 {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 15px; }
+    .container-about .descripcion p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      margin-left: 40px; }
+    .container-about .descripcion .asic-text, .container-about .descripcion .gpu-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 20px;
+      margin-top: 40px; }
+  .container-about .asic-p .image-asic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .container-about .gpu-p .image-gpu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .container-about .us-row {
+    margin-top: 80px; }
+    .container-about .us-row .row {
+      align-items: center; }
+      .container-about .us-row .row .image-asic, .container-about .us-row .row .image-gpu {
+        padding: 20px; }
+        .container-about .us-row .row .image-asic img, .container-about .us-row .row .image-gpu img {
+          max-width: 80%;
+          height: auto; }
+
+.container-hosting {
+  margin: 64px 0;
+  padding: 32px;
+  display: flex;
+  align-items: center;
   gap: 32px; }
-
-.us-box {
-  color: black; }
-
-.tabla-asic {
-  margin: 2rem;
-  border: 1px solid black;
-  width: 40rem;
-  height: 20rem;
-  padding: 2rem;
-  text-align: center;
-  border-spacing: 20px; }
-  .tabla-asic th,
-  .tabla-asic td {
-    border: 1px solid #ccc; }
-
-.tabla-gpu {
-  margin: 2rem;
-  border: 1px solid black;
-  width: 40rem;
-  height: 20rem;
-  padding: 2rem;
-  text-align: center;
-  border-spacing: 20px; }
-  .tabla-gpu th,
-  .tabla-gpu td {
-    border: 1px solid #ccc; }
-
-.image-asic {
-  margin: 2rem;
-  padding: 20px;
-  display: flex;
-  align-items: center; }
-
-.image-gpu {
-  margin: 2rem;
-  padding: 20px;
-  display: flex;
-  align-items: center; }
-
-h2 {
-  margin: 10px;
-  padding-top: 50px;
-  text-align: center;
-  color: white; }
-
-@keyframes slidein {
-  from {
-    transform: translate3d(0, 0, 0); }
-  to {
-    transform: translate3d(-100%, 0, 0); } }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+  .container-hosting .descripcion {
+    margin: 40px auto;
+    max-width: 800px; }
+    .container-hosting .descripcion .hosting-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: black !important; }
+    .container-hosting .descripcion p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px; }
