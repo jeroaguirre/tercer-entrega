@@ -180,7 +180,7 @@
     .container-start .mine .mineria {
       overflow: hidden;
       float: right;
-      margin-right: 200px; }
+      margin: 20px auto; }
   .container-start .host {
     display: flex;
     justify-content: space-around; }
@@ -270,10 +270,6 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .container-about .gpu-p .image-gpu {
-    transition: all 0.5s ease-in-out; }
-  .container-about .gpu-p .image-gpu:hover {
-    transform: scale(1.2); }
   .container-about .us-row {
     margin-top: 80px; }
     .container-about .us-row .row {
