@@ -1,10 +1,12 @@
 
 .container-about {
-    margin: 64px 0;
-    padding: 32px;
+
+
     display: flex;
     align-items: center;
     gap: 50px;
+    background-image: linear-gradient(rgb(248, 220, 160),white, rgb(248, 220, 160));
+    width: 100%;
   
     .descripcion {
       margin: 40px auto;
@@ -51,29 +53,29 @@
         justify-content: space-between;
         align-items: center;
     }
+     .gpu-p .image-gpu {
+         transition: all 0.5s ease-in-out;
+     }
+    
+     .gpu-p .image-gpu:hover {
+        transform: scale(1.2);
+     }
+    
   
     .us-row {
       margin-top: 80px;
   
       .row {
         align-items: center;
-  
-
-  
-          .image-asic, .image-gpu {
-            
+          .image-asic, .image-gpu {    
             padding: 20px;
-
-
-  
+        
             img {
               max-width: 80%;
               height: auto;
             }
           }
-  
-  
-       
+        
       }
     }
 }

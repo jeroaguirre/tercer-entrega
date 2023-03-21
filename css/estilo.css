@@ -145,8 +145,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
-    color: black; }
+    transform: translateX(-50%); }
 
 @keyframes slidein {
   from {
@@ -161,7 +160,7 @@
     opacity: 1; } }
 
 .container-start {
-  background-image: linear-gradient(lightgrey, lightblue, white); }
+  background-image: linear-gradient(rgba(55, 9, 238, 0.421), lightblue, white); }
   .container-start .image-mine {
     width: 30vw;
     height: 20vw;
@@ -199,6 +198,8 @@
   border: 1px solid black;
   background-image: url(../images/Logo2.jpeg);
   background-position: center; }
+  .container-form .h2-form {
+    color: white; }
 
 form {
   display: flex;
@@ -234,11 +235,11 @@ label {
   background-color: rgba(128, 128, 128, 0.1); }
 
 .container-about {
-  margin: 64px 0;
-  padding: 32px;
   display: flex;
   align-items: center;
-  gap: 50px; }
+  gap: 50px;
+  background-image: linear-gradient(#f8dca0, white, #f8dca0);
+  width: 100%; }
   .container-about .descripcion {
     margin: 40px auto;
     max-width: 800px; }
@@ -269,6 +270,10 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+  .container-about .gpu-p .image-gpu {
+    transition: all 0.5s ease-in-out; }
+  .container-about .gpu-p .image-gpu:hover {
+    transform: scale(1.2); }
   .container-about .us-row {
     margin-top: 80px; }
     .container-about .us-row .row {
@@ -284,14 +289,20 @@ label {
   padding: 32px;
   display: flex;
   align-items: center;
-  gap: 32px; }
+  gap: 32px;
+  background-image: url(../images/host.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #20024c;
+  width: 100%;
+  color: white; }
   .container-hosting .descripcion {
-    margin: 40px auto;
+    margin-left: 10px;
     max-width: 800px; }
     .container-hosting .descripcion .hosting-title {
       font-size: 32px;
       margin-bottom: 20px;
-      color: black !important; }
+      color: white !important; }
     .container-hosting .descripcion p {
       font-size: 18px;
       line-height: 1.5;
