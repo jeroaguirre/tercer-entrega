@@ -6,74 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="../images/android-chrome-192x192.png"/>
+    <title>Mineria</title>
 </head>
 <body>
         <header>
-        <div class="nav-asic">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container-fluid">
-                <a class="navbar-brand me-auto" href="../index.html">
-                    <img src="../images/Logo2.jpeg" width="60" height="60" alt="">
-                </a>    
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
-                    <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    <a class="nav-link" href="../pages/mineria.html">Mineria</a>
-                    <a class="nav-link" href="../pages/hosting.html">Hosting</a>
+            <div class="nav-asic">
+                <nav class="navbar navbar-expand-md">
+                    <div class="container-fluid">
+                    <a class="navbar-brand me-auto" href="../index.html">
+                        <img src="../images/Logo2.jpeg" width="60" height="60" alt="">
+                    </a>    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
+                        <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="../pages/mineria.html">Mineria</a>
+                        <a class="nav-link" href="../pages/hosting.html">Hosting</a>
 
+                        </div>
                     </div>
-                </div>
-                </div>
-            </nav>
+                    
+                </nav>
+            </div>
         </header>
 
 
         <main>
-            <div class="container">
-                <div class="row">
-                    <div class="container-about col-sm-12 col-md-8">
-                        <div class="descripcion mt-3 mt-md-5">
-                            <h2>ASIC vs GPU para minería de criptomonedas</h2>
-                            <p>La minería de criptomonedas es un proceso intensivo que requiere de una gran cantidad de poder de procesamiento para resolver complejos algoritmos matemáticos y validar las transacciones en la red blockchain. En la actualidad, hay dos opciones principales para realizar la minería de criptomonedas: los ASIC y las GPU.</p>
-                            <div class="asic-text">
-                                <h3>ASIC</h3>
-                                <p class="asic-p">Los ASIC (Circuitos Integrados de Aplicación Específica, por sus siglas en inglés) son dispositivos de hardware diseñados específicamente para la minería de criptomonedas. Los ASIC son capaces de realizar cálculos matemáticos complejos a una velocidad mucho mayor que las GPU, lo que los convierte en la opción preferida para la minería de criptomonedas en la actualidad. Sin embargo, debido a que los ASIC están diseñados específicamente para un tipo de criptomoneda, no son flexibles y no pueden ser utilizados para otras criptomonedas. Además, son dispositivos costosos y pueden requerir una gran cantidad de energía eléctrica para funcionar.</p>
-                            </div>
-                            <div class="gpu-text">
-                                <h3>GPU</h3>
-                                <p class="gpu-p">Las GPU (Unidades de Procesamiento Gráfico, por sus siglas en inglés) son dispositivos de hardware que están diseñados para procesar gráficos, pero también pueden ser utilizados para la minería de criptomonedas. A diferencia de los ASIC, las GPU son más flexibles y pueden ser utilizados para la minería de varias criptomonedas diferentes. Sin embargo, las GPU no pueden realizar cálculos matemáticos tan rápido como los ASIC, lo que significa que no son tan eficientes para la minería de criptomonedas como los ASIC.</p>
-
-                                <p>En resumen, la elección entre ASIC y GPU para la minería de criptomonedas dependerá de varios factores, como el tipo de criptomoneda que se desea minar, el presupuesto y el consumo de energía eléctrica que se esté dispuesto a invertir en el proceso.</p>
-                            </div>
-                        </div>
+            <div class="container-about">
+              <div class="row">
+                <div class="col-12 col-md-8 mb-3 mb-md-0">
+                    <div class="descripcion mt-3 mt-md-5">
+                        <h2 class="title-mineria">ASIC vs GPU para minería de criptomonedas</h2>
+                        <p>La minería de criptomonedas es un proceso intensivo que requiere de una gran cantidad de poder de procesamiento para resolver complejos algoritmos matemáticos y validar las transacciones en la red blockchain. En la actualidad, hay dos opciones principales para realizar la minería de criptomonedas: los ASIC y las GPU.</p>
                         <div class="row">
-                            <div>
-                                    <div class="col-md-6 col-md-4">
-                                        <div class="image-asic">
-                                            <img src="../images/1858fd49-a873-4649-a299-a3254d618a24_540-removebg-preview.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-md-4">
-                                        <div class="image-gpu">
-                                            <img src="../images/D_NQ_NP_942892-MLA46369704022_062021-O-removebg-preview.png" alt="">
-                                        </div>
-                                    </div>
-                            </div>                  
+                        <div class="col-12 col-md-6">
+                            <h3>ASIC</h3>
+                            <p class="asic-p">Los ASIC (Circuitos Integrados de Aplicación Específica, por sus siglas en inglés) son dispositivos de hardware diseñados específicamente para la minería de criptomonedas. Los ASIC son capaces de realizar cálculos matemáticos complejos a una velocidad mucho mayor que las GPU, lo que los convierte en la opción preferida para la minería de criptomonedas en la actualidad. Sin embargo, debido a que los ASIC están diseñados específicamente para un tipo de criptomoneda, no son flexibles y no pueden ser utilizados para otras criptomonedas. Además, son dispositivos costosos y pueden requerir una gran cantidad de energía eléctrica para funcionar.</p>
+                            <div class="image-asic">
+                            <img src="../images/1858fd49-a873-4649-a299-a3254d618a24_540-removebg-preview.png" alt="asic-imagen">
+                            </div>
                         </div>
+                        <div class="col-12 col-md-6">
+                            <h3>GPU</h3>
+                            <p class="gpu-p">Las GPU (Unidades de Procesamiento Gráfico, por sus siglas en inglés) son dispositivos de hardware que están diseñados para procesar gráficos, pero también pueden ser utilizados para la minería de criptomonedas. A diferencia de los ASIC, las GPU son más flexibles y pueden ser utilizados para la minería de varias criptomonedas diferentes. Sin embargo, las GPU no pueden realizar cálculos matemáticos tan rápido como los ASIC, lo que significa que no son tan eficientes para la minería de criptomonedas como los ASIC.</p>
+                            <div class="image-gpu">
+                            <img src="../images/D_NQ_NP_942892-MLA46369704022_062021-O-removebg-preview.png" alt="gpu-imagen">
+                            </div>
+                        </div>
+                        </div>
+                        <p>En resumen, la elección entre ASIC y GPU para la minería de criptomonedas dependerá de varios factores, como el tipo de criptomoneda que se desea minar, el presupuesto y el consumo de energía eléctrica que se esté dispuesto a invertir en el proceso.</p>
                     </div>
                 </div>
+              </div>
             </div>
         </main>
+          
+          
     
-        <footer>
-            <section class="container-end text-center mb-4 fs-2">
-                <h3>Copyright 2023</h3>       
-            </section>
-        </footer>
+        <footer class="bg-dark text-white">
+            <div class="container py-4">
+              <div class="row">
+                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                  <h3 class="fs-2">Copyright 2023</h3>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="https://twitter.com" target="_blank">
+                        <img src="../images/png-transparent-social-media-computer-icons-tulane-university-facebook-drawing-twitter-twitter-logo-blue-logo-computer-wallpaper-thumbnail-removebg-preview.png" alt="twitter" class="img-fluid" width="30" height="30">
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.facebook.com" target="_blank">
+                        <img src="../images/facebook.png" alt="facebook" class="img-fluid" width="30" height="30">
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.instagram.com" target="_blank">
+                        <img src="../images/instagram.png" alt="instagram" class="img-fluid" width="30" height="30">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
     
     
     

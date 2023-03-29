@@ -1,7 +1,8 @@
 * {
   padding: 0%;
   margin: 0%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif; }
 
 .section-all {
   background-image: url(../images/22076005.jpg);
@@ -15,7 +16,7 @@
   justify-content: space-between; }
 
 .nav-asic {
-  background-image: url(../images/asic.png);
+  background-image: url(../images/asic-min.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -26,7 +27,7 @@
   justify-content: space-between; }
 
 .nav-gpu {
-  background-image: url(../images/gpu.png);
+  background-image: url(../images/gpu-min.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -87,7 +88,6 @@
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background-color: rgba(182, 182, 220, 0.772);
     top: 0;
     left: 0;
     right: 0;
@@ -160,35 +160,54 @@
     opacity: 1; } }
 
 .container-start {
-  background-image: linear-gradient(rgba(55, 9, 238, 0.421), lightblue, white); }
-  .container-start .image-mine {
+  background-image: linear-gradient(rgba(55, 9, 238, 0.421), lightblue, white);
+  max-width: 100%; }
+  .container-start .image-mine .image-host {
     width: 30vw;
     height: 20vw;
-    transition: height 2s; }
-  .container-start .image-mine:hover {
-    height: 200px; }
-  .container-start .image-host {
-    width: 25vw;
-    height: 25vw; }
-  .container-start .image-mine {
-    float: left;
-    margin-left: 100px; }
-  .container-start .mine {
+    transition: height 2s;
+    border-radius: 8%;
+    animation: entrada 5s;
+    gap: 6rem; }
+
+@keyframes entrada {
+  0% {
+    transform: scale(0.5);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+  .container-start .mine-host {
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .container-start .mine .mineria {
-      overflow: hidden;
-      float: right;
-      margin: 20px auto; }
-  .container-start .host {
-    display: flex;
-    justify-content: space-around; }
-    .container-start .host .hosting {
-      overflow: hidden;
-      float: left;
-      margin-top: 100px;
-      margin-left: 100px; }
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%;
+    margin: 2rem auto; }
+  .container-start .card {
+    margin: 2rem auto; }
+  .container-start .mineria .hosting {
+    overflow: hidden;
+    float: right;
+    margin: 2rem auto;
+    animation: entrada 5s;
+    gap: 2rem; }
+
+@keyframes entrada {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes entrada {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
 
 .container-form {
   display: flex;
@@ -229,59 +248,69 @@ label {
 .container-end {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  height: 60px;
+  height: 100px;
   background-color: rgba(128, 128, 128, 0.1); }
 
-.container-about {
+footer {
+  background-color: #f9f9f9;
   display: flex;
-  align-items: center;
-  gap: 50px;
-  background-image: linear-gradient(#f8dca0, white, #f8dca0);
-  width: 100%; }
+  flex-direction: column;
+  align-items: center; }
+  footer h3 {
+    font-size: 1.5rem;
+    margin: 1rem; }
+  footer .redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 2rem; }
+    footer .redes-sociales li {
+      margin: 0 10px;
+      transition: all 0.3s ease-in-out;
+      list-style: none; }
+      footer .redes-sociales li:hover {
+        transform: translateY(-3px); }
+      footer .redes-sociales li a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden; }
+        footer .redes-sociales li a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+
+.container-about {
+  max-width: 100%;
+  background-image: linear-gradient(#f8dca0, white, #f8dca0); }
   .container-about .descripcion {
-    margin: 40px auto;
-    max-width: 800px; }
-    .container-about .descripcion h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
-      margin-left: 40px; }
+    padding: 2rem; }
+    .container-about .descripcion .title-mineria {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      max-width: 100%; }
     .container-about .descripcion h3 {
-      font-size: 24px;
-      margin-top: 30px;
-      margin-bottom: 15px; }
+      font-size: 1.5rem;
+      margin: 1rem auto; }
     .container-about .descripcion p {
-      font-size: 18px;
+      font-size: 1rem;
       line-height: 1.5;
-      margin-bottom: 20px;
-      margin-left: 40px; }
-    .container-about .descripcion .asic-text, .container-about .descripcion .gpu-text {
+      margin-bottom: 1rem; }
+    .container-about .descripcion .image-asic img,
+    .container-about .descripcion .image-gpu img {
+      max-width: 100%;
+      height: auto; }
+    .container-about .descripcion .us-row .row {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-right: 20px;
-      margin-top: 40px; }
-  .container-about .asic-p .image-asic {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .container-about .gpu-p .image-gpu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .container-about .us-row {
-    margin-top: 80px; }
-    .container-about .us-row .row {
-      align-items: center; }
-      .container-about .us-row .row .image-asic, .container-about .us-row .row .image-gpu {
-        padding: 20px; }
-        .container-about .us-row .row .image-asic img, .container-about .us-row .row .image-gpu img {
-          max-width: 80%;
-          height: auto; }
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem; }
 
 .container-hosting {
-  margin: 64px 0;
   padding: 32px;
   display: flex;
   align-items: center;
@@ -289,7 +318,7 @@ label {
   background-image: url(../images/host.png);
   background-position: right;
   background-repeat: no-repeat;
-  background-color: #20024c;
+  background-color: #381a65;
   width: 100%;
   color: white; }
   .container-hosting .descripcion {

@@ -57,51 +57,74 @@
 
 .container-start {
   background-image: linear-gradient(rgba(55, 9, 238, 0.421),lightblue, white);
+  max-width: 100%;
+
   
-  .image-mine {
+  .image-mine .image-host {
     width: 30vw;
     height: 20vw;
     transition: height 2s;
-  }
-
-  .image-mine:hover {
-    height: 200px;
-  }
-  
-  .image-host {
-  width: 25vw;
-  height: 25vw;
-
+    border-radius: 8%;
+    animation: entrada 5s;
+    gap: 6rem;
   }
   
- 
-  .image-mine {
-    float: left; 
-    margin-left: 100px; 
-  }
-  
-  .mine {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
 
-    .mineria {
-      overflow: hidden;
-      float: right;
-      margin: 20px auto
+  @keyframes entrada {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
     }
   }
-
-  .host {
+  
+  .mine-host {
     display: flex;
-    justify-content: space-around;
-   
-    .hosting {
-      overflow: hidden;
-      float: left;
-      margin-top: 100px;
-      margin-left: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%;
+    margin: 2rem auto;
+
+  }
+  
+  .card {
+    margin: 2rem auto;
+  }
+
+  .mineria .hosting {
+    overflow: hidden;
+    float: right;
+    margin: 2rem auto;
+    animation: entrada 5s;
+    gap: 2rem;
+  }
+  
+  @keyframes entrada {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  
+  @keyframes entrada {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
   
@@ -159,9 +182,59 @@ label {
 .container-end {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  height: 60px;
+  height: 100px;
   background-color: rgba(128, 128, 128, 0.1);  
+}
+
+footer {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  
+  h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
+
+  }
+  
+  .redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 2rem;
+    
+    
+    li {
+      margin: 0 10px;
+      transition: all 0.3s ease-in-out;
+      list-style: none;
+      
+      &:hover {
+        transform: translateY(-3px);
+      }
+      
+      a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+
+
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 

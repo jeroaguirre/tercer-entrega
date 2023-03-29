@@ -1,74 +1,56 @@
 
 .container-about {
-
-
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    max-width: 100%;
     background-image: linear-gradient(rgb(248, 220, 160),white, rgb(248, 220, 160));
-    width: 100%;
+
+
   
     .descripcion {
-      margin: 40px auto;
-      max-width: 800px;
-  
-      h2 {
-
-        font-size: 32px;
-        margin-bottom: 40px;
-        margin-left: 40px
+      padding: 2rem;
+      
+      .title-mineria {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
       }
   
       h3 {
-        font-size: 24px;
-        margin-top: 30px;
-        margin-bottom: 15px;
+        font-size: 1.5rem;
+        margin: 1rem auto;
       }
   
       p {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: 20px;
-        margin-left: 40px;
-  
+        margin-bottom: 1rem;
       }
-  
-      .asic-text, .gpu-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 20px;
-        margin-top: 40px;
+
+      .image-asic img,
+      .image-gpu img {
+      max-width: 100%;
+      height: auto;
       }
-    }
 
-    .asic-p .image-asic {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    .gpu-p .image-gpu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+
+
+
+
   
   
     .us-row {
-      margin-top: 80px;
+
   
       .row {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-          .image-asic, .image-gpu {    
-            padding: 20px;
-        
-            img {
-              max-width: 80%;
-              height: auto;
-            }
-          }
-        
+        gap: 2rem;
+
+
+    
       }
+        
     }
+  }
 }

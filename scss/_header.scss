@@ -2,7 +2,9 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
 }
+
 
 @mixin nav-seccion {
     background-position: center center;
@@ -31,12 +33,12 @@
 }
 
 .nav-asic {
-        background-image: url(../images/asic.png);
+        background-image: url(../images/asic-min.png);
         @include nav-seccion;
 }
 
 .nav-gpu {
-        background-image: url(../images/gpu.png);
+        background-image: url(../images/gpu-min.png);
         @include nav-seccion;
 }
 
@@ -106,7 +108,7 @@
 
 @media (max-width: 991px) {
         .navbar-collapse {
-            background-color: rgba(182, 182, 220, 0.772);
+
             top: 0;
             left: 0;
             right: 0;
