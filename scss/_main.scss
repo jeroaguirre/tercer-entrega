@@ -1,6 +1,24 @@
 
 
-.slider {
+
+  
+.container-hero {
+    position: relative;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+
+    h2.text-center {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      
+    
+    }
+
+    .slider {
     animation: slidein 30s linear infinite;
     white-space: nowrap;
 }
@@ -18,21 +36,6 @@
 .fab {
     width: calc(1% / 5);
 }
-  
-.container-hero {
-    position: relative;
-    margin: 2rem auto;
-    display: flex;
-    align-items: center;
-
-    h2.text-center {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      
-    
-    }
 
 }
   

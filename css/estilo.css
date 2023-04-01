@@ -122,30 +122,28 @@
 .btn-cont button:active {
   scale: 0.95; }
 
-.slider {
-  animation: slidein 30s linear infinite;
-  white-space: nowrap; }
-
-.logos {
-  width: 100%;
-  display: inline-block; }
-  .logos img {
-    width: 50px;
-    margin: 0 15px; }
-
-.fab {
-  width: calc(1% / 5); }
-
 .container-hero {
   position: relative;
-  margin: 2rem auto;
+  margin: 0.5rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  max-width: 100%; }
   .container-hero h2.text-center {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%); }
+  .container-hero .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap; }
+  .container-hero .logos {
+    width: 100%;
+    display: inline-block; }
+    .container-hero .logos img {
+      width: 50px;
+      margin: 0 15px; }
+  .container-hero .fab {
+    width: calc(1% / 5); }
 
 @keyframes slidein {
   from {
@@ -286,29 +284,23 @@ footer {
 
 .container-about {
   max-width: 100%;
-  background-image: linear-gradient(#f8dca0, white, #f8dca0); }
-  .container-about .descripcion {
-    padding: 2rem; }
-    .container-about .descripcion .title-mineria {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      max-width: 100%; }
-    .container-about .descripcion h3 {
-      font-size: 1.5rem;
-      margin: 1rem auto; }
-    .container-about .descripcion p {
-      font-size: 1rem;
-      line-height: 1.5;
-      margin-bottom: 1rem; }
-    .container-about .descripcion .image-asic img,
-    .container-about .descripcion .image-gpu img {
-      max-width: 100%;
-      height: auto; }
-    .container-about .descripcion .us-row .row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem; }
+  background-image: linear-gradient(#f8dca0, white, #f8dca0);
+  padding: 4rem; }
+  .container-about .description .title-mineria {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    max-width: 100%; }
+  .container-about .description .container-desc h3 {
+    font-size: 1.5rem;
+    margin: 1rem auto; }
+  .container-about .description .container-desc p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem; }
+  .container-about .description .container-desc .image-asic img,
+  .container-about .description .container-desc .image-gpu img {
+    max-width: 100%;
+    height: auto; }
 
 .container-hosting {
   padding: 32px;
@@ -316,7 +308,7 @@ footer {
   align-items: center;
   gap: 32px;
   background-image: url(../images/host.png);
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #381a65;
   width: 100%;
@@ -331,4 +323,5 @@ footer {
     .container-hosting .descripcion p {
       font-size: 18px;
       line-height: 1.5;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-right: 25rem; }

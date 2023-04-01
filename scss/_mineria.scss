@@ -2,55 +2,42 @@
 .container-about {
     max-width: 100%;
     background-image: linear-gradient(rgb(248, 220, 160),white, rgb(248, 220, 160));
+    padding: 4rem;
 
+    
 
   
-    .descripcion {
-      padding: 2rem;
-      
+    .description {
+     
       .title-mineria {
         font-size: 2rem;
         margin-bottom: 2rem;
         max-width: 100%;
       }
   
-      h3 {
-        font-size: 1.5rem;
-        margin: 1rem auto;
-      }
-  
-      p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 1rem;
-      }
-
-      .image-asic img,
-      .image-gpu img {
-      max-width: 100%;
-      height: auto;
-      }
+    .container-desc {
 
 
+          h3 {
+            font-size: 1.5rem;
+            margin: 1rem auto;
+          }
+      
+          p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+          }
+
+          .image-asic img,
+          .image-gpu img {
+            max-width: 100%;
+            height: auto;
+          }
 
 
 
+    }  
 
-  
-  
-    .us-row {
-
-  
-      .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-
-
-    
-      }
-        
-    }
   }
 }
