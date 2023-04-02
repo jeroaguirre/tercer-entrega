@@ -88,6 +88,7 @@
 
 @media (max-width: 991px) {
   .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.525);
     top: 0;
     left: 0;
     right: 0;
@@ -308,20 +309,22 @@ footer {
   align-items: center;
   gap: 32px;
   background-image: url(../images/host.png);
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-color: #381a65;
   width: 100%;
-  color: white; }
+  color: white;
+  max-width: 100%; }
   .container-hosting .descripcion {
-    margin-left: 10px;
-    max-width: 800px; }
+    margin-left: 10px; }
     .container-hosting .descripcion .hosting-title {
       font-size: 32px;
       margin-bottom: 20px;
       color: white !important; }
-    .container-hosting .descripcion p {
+    .container-hosting .descripcion .parrafo {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
       font-size: 18px;
       line-height: 1.5;
-      margin-bottom: 20px;
-      margin-right: 25rem; }
+      margin-bottom: 20px; }

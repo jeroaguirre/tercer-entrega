@@ -4,15 +4,16 @@
     align-items: center;
     gap: 32px;
     background-image: url(../images/host.png);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-color: rgb(56, 26, 101);
     width: 100%;
     color: white;
+    max-width: 100%;
   
     .descripcion {
       margin-left: 10px;
-      max-width: 800px;
+
 
       
       .hosting-title {
@@ -21,11 +22,18 @@
         color: rgb(255, 255, 255) !important;
       }
       
-      p {
+      .parrafo {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
         font-size: 18px;
         line-height: 1.5;
         margin-bottom: 20px;
-        margin-right: 25rem;
+
+
+
       }
     }
+
+    
 }
